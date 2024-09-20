@@ -1,6 +1,12 @@
 Project Scale<br>
 
+
 Website to visualize page for each test experiement made on mycélium<br>
+
+Must-have :
+    create structure to visualize each file (page) /3
+    possibility to edit each page (text) /5
+    add pictures /2
 
 (previously QR code generator website)
 <br>
@@ -21,6 +27,7 @@ Must-have :<br>
 <br>
 
 Nice to have:
+
     good-looking website /3<br>
 
     auto date /1<br>
