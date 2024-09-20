@@ -1,22 +1,35 @@
 Project Scale<br>
+
 Website to visualize page for each test experiement made on mycélium<br>
-(previously QR code generator website)<br><br>
+
+(previously QR code generator website)
+<br>
 
 Must-have :<br>
-    create structure to visualize each file (page) /4<br>
+
+    create structure to visualize each file (page) /3<br>
+
     possibility to edit each page (text) /5<br>
-    add scrolling option /1<br>
-<br>
+
+    add pictures /2<br>
+
+    
+
     (create QR code for website and text
     create simple website to visualize QR code)
 
-
-Nice to have:<br>
-    good-looking website<br>
-    import picture to page <br>
-    research function to find the right page<br>
-    download page as pdf <br>
 <br>
+
+Nice to have:
+    good-looking website /3<br>
+
+    auto date /1<br>
+
+    research function to find the right page /2<br>
+
+    download page as pdf /2<br>
+
+
     (input text and website directly on the page 
     download button)
 
