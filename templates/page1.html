@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyceliPages</title>
+    <style>
+        body{
+            display: flex;
+            margin: 0;
+            height: 100vh;
+            flex-direction: row;
+
+        }
+        h1{
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 80%;
+            height: 100%;
+        }
+        .editor {
+            border: 0px solid #ccc;
+            padding: 10px;
+            min-height: 150px;
+            margin-bottom: 10px;
+            flex : 1;
+        }
+        .sidebar {
+            width: flex;
+            border: 1px solid #ccc;
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;  
+            margin-top: 10px;
+            text-align: left;
+        }
+        button {
+            margin-right: 5px
+            
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="sidebar">
+        <a href="main.html" >MyceliPages</a> <br>
+        <button id="boldBtn">Bold</button>
+        <button id="centerTextBtn">Center Text</button>
+        <button id="leftTextBtn">Left Text</button>
+
+
+
+    </div>
+    <div class="container">
+        <div class="editor" contenteditable="true">
+            <p>Start type here...</p>
+        </div>
+    </div>
+    
+        
+   
+
+
+
+    
+
+
+
+
+<script>
+
+ 
+        document.addEventListener('DOMContentLoaded', function() {
+                const savedContent = localStorage.getItem('editorContent');
+                if (savedContent) {
+                    document.querySelector('.editor').innerHTML = savedContent;
+                }
+            });
+
+            document.querySelector('.editor').addEventListener('input', function() {
+                const content = this.innerHTML;
+                localStorage.setItem('editorContent', content);
+            });
+    document.getElementById('boldBtn').addEventListener('click', function() {
+        document.execCommand('bold');
+    });
+    document.getElementById('centerTextBtn').addEventListener('click', function() {
+        document.execCommand('justifyCenter');
+    });
+    document.getElementById('leftTextBtn').addEventListener('click', function() {
+        document.execCommand('justifyLeft');
+    });
+
+
+</script>
+
+
+</body>
+</html>
